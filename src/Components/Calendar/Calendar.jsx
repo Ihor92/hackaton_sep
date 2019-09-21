@@ -1,7 +1,6 @@
 import React from 'react';
-<<<<<<< HEAD
 import ReactDOM from 'react-dom';
-import "Calendar.css";
+import "./Calendar.css";
 
 import {MainContent} from "../MainContent/MainContent.jsx";
 import {CalendarHeader} from "../CalendarHeader/CalendarHeader.jsx";
@@ -13,6 +12,5 @@ export function Calendar() {
       <CalendarHeader/>
       <MainContent/>
     </div>
-
   )
 }

@@ -4,10 +4,10 @@ import "./CalendarHeader.css"
 export function CalendarHeader() {
   return(
     <div className="CalendarHeader">
-      <button></button>
+      <button>Today</button>
       <div>
-        <button></button>
-        <button></button>
+        <button>{'<'}</button>
+        <button>{'>'}</button>
       </div>
       <div>
         <div></div>
