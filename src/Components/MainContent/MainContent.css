@@ -1,0 +1,13 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+}
+.wrapper > div {
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+.day-of-week {
+
+}
