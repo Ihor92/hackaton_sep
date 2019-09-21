@@ -21,8 +21,8 @@ export function CalendarHeader(props) {
     <div className="CalendarHeader">
       <button>Today</button>
       <div>
-        <button>Previous</button>
-        <button>Next</button>
+        <button>{'<'}</button>
+        <button>{'>'}</button>
       </div>
       <div>
         <div>{monthArray[props.currentMonth]}</div>
