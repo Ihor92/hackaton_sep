@@ -1,14 +1,14 @@
 .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .wrapper > div {
-    border: 2px solid blueviolet;
-    border-radius: 5px;
-    padding: 1em;
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+  padding: 1em;
 }
 
 .day-of-week {
-    background-color: lightgrey;
+  background-color: lightgrey;
 }
