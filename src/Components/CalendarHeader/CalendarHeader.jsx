@@ -21,14 +21,14 @@ export function CalendarHeader(props) {
 
   return(
     <div className="CalendarHeader">
-      <button onClick={() => props.today()}>Today</button>
-      <div>
-        <button onClick={() => props.prev()}>{'<'}</button>
-        <button onClick={() => props.next()}>{'>'}</button>
+      <button className="CalendarHeaderButton" onClick={() => props.today()}>Today</button>
+      <div className="CalendarHeaderButtons">
+        <button className="prevButton" onClick={() => props.prev()}>{'<'}</button>
+        <button className="nextButton" onClick={() => props.next()}>{'>'}</button>
       </div>
-      <div>
-        <div>{monthArray[props.currentMonth]}</div>
-        <div>{props.currentYear}</div>
+      <div className="CalendarHeaderDate">
+        <div className="CalendarHeaderDateMonth">{monthArray[props.currentMonth]}</div>
+        <div className="CalendarHeaderDateYear">{props.currentYear}</div>
       </div>
     </div>
   );

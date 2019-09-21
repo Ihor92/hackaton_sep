@@ -4,11 +4,11 @@
 }
 
 .wrapper > div {
-    border: 2px solid blueviolet;
-    border-radius: 5px;
+    border: 1px solid blueviolet;
     padding: 1em;
+    color: blue;
 }
 
 .day-of-week {
-    background-color: lightgrey;
+    background-color: lightblue;
 }
