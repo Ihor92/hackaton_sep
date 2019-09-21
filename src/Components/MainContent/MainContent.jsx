@@ -50,7 +50,7 @@ export class MainContent extends React.Component {
 
     return (
       items.join(','),
-      <div className="">
+      <div className="wrapper">
         {week.map( (day)=> {
           return <div className="day-of-week">{day}</div>;
         })}
