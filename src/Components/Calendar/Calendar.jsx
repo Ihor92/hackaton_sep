@@ -8,9 +8,26 @@ export class Calendar extends React.Component {
     super(props);
     this.state = {
       currentDate: new Date(),
-      items: []
-    }
+    };
   }
+
+  today = () => {
+    this.setState({
+      currentDate: new Date()
+    })
+  };
+
+  next = () => {
+    this.setState({
+      currentDate: new Date(this.state.currentDate.setMonth(this.state.currentDate.getMonth()+1))
+    })
+  };
+
+  prev = () => {
+    this.setState({
+      currentDate: new Date(this.state.currentDate.setMonth(this.state.currentDate.getMonth()-1))
+    })
+  };
 
   render() {
     const currentYear = this.state.currentDate.getFullYear();
@@ -20,6 +37,9 @@ export class Calendar extends React.Component {
         <CalendarHeader
           currentYear={currentYear}
           currentMonth={currentMonth}
+          next={this.next}
+          prev={this.prev}
+          today={this.today}
         />
         <MainContent
           currentDate={this.state.currentDate}

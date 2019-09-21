@@ -17,12 +17,14 @@ export function CalendarHeader(props) {
     "Грудень"
   ];
 
+
+
   return(
     <div className="CalendarHeader">
-      <button>Today</button>
+      <button onClick={() => props.today()}>Today</button>
       <div>
-        <button>{'<'}</button>
-        <button>{'>'}</button>
+        <button onClick={() => props.prev()}>{'<'}</button>
+        <button onClick={() => props.next()}>{'>'}</button>
       </div>
       <div>
         <div>{monthArray[props.currentMonth]}</div>
